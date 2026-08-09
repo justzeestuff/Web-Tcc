@@ -1,91 +1,58 @@
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: var(--pitch-dark);
-  border-bottom: 1px solid var(--pitch-line);
-  font-family: bigShoulders;
+.header{
+  background-color: rgba(6, 12, 20, 0.644);
+  height: 80px;
+    padding: 0 18vw;
 }
-
-.header .headerWrap {
-  max-width: 1180px;
-  margin: 0 auto;
+.header .wrapper{
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 28px;
 }
-
-.header .title {
-  font-family: 'Big Shoulders Display', sans-serif;
-  font-weight: 900;
-  font-size: 28px;
-  letter-spacing: .02em;
-  color: var(--chalk);
-  gap: 12px;
-  font-family: bigShoulders;
-
+.header article{
   display: flex;
   align-items: center;
-  line-height: 1.05;
+  gap: 15px;
+  color: white;
 }
-
-.header .title p:first-child {
-  color: var(--amber);
+.header article section p{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.9;
 }
-
-.header .title section p:last-child {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: .06em;
-  color: var(--chalk-dim);
+.header article section p:last-child{
+  font-size: 10px;
+  bottom: 20px;
 }
-
-.header .title a {
-  display: block;
-  background-image: url(/img/icon.jpg);
-  background-position: center;
-  background-size: 50px;
-  border-radius: 100px;
-  height: 42px;
-  width: 42px;
+.header article img{
+  height: 50px;
+  margin-top: 6px;
+  width: 50px;
+  border-radius: 10px;
 }
-
-.nav ul {
-  list-style: none;
+/* navigation */
+.header nav,
+.header nav ul,
+.header nav ul li{
+  height: 100%;
+}
+.header nav ul{
   display: flex;
   gap: 30px;
 }
-
-.nav a {
-  color: var(--chalk-dim);
-  text-decoration: none;
-  font-size: 17px;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 4px;
-  transition: color .15s ease, border-color .15s ease;
+.header nav ul li{
+  display: flex;
+  align-items: center;
 }
-
-.nav a:hover,
-.nav a:focus-visible {
-  color: var(--chalk);
-  border-color: var(--amber);
-  outline: none;
-}
-
-@media (max-width:860px) {
-  .headerWrap {
-    flex-direction: column;
-    gap: 14px;
-    align-items: flex-start;
-  }
-
-  .nav ul {
-    gap: 18px;
-    flex-wrap: wrap;
-  }
+.header nav ul a{
+  display: block;
+  text-align: center;
+  /* background: var(--gradientBg); */
+  border-radius: 50px;
+  font-family: sans-serif;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0.9;
 }

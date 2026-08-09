@@ -1,14 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    list-style-type: none;
+    text-decoration: none;
 }
-:root {
-    --pitch-dark: #0B2E1F;
-    --pitch-line: rgba(242, 238, 225, .09);
-    --chalk: #F2EEE1;
-    --chalk-dim: #C8C2AE;
-    --amber: #E8A33D;
+:root{
+    --gradientBg: radial-gradient(circle at 10% 0%, rgba(43,124,255,.16), transparent 25%), radial-gradient(circle at 100% 0%, rgba(229,76,68,.10), transparent 20%), radial-gradient(circle at 90% 25%, rgba(240,181,58,.08), transparent 18%), linear-gradient(180deg, #050b13 0%, #07111d 38%, #091424 100%);
 }
+body{
+    background: var(--gradientBg);
+    height: 100vh;
+}
+
 @font-face {
     font-family: bigShoulders;
     src: url(./assets/fonts/BigShoulders.ttf);

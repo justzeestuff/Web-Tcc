@@ -1,0 +1,60 @@
+.main{
+    padding: 0 18vw;
+}
+.main .shortData{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+.main .shortData article{
+    height: 400px;
+    width: 300px;
+    padding: 55px 25px;
+    width: 100%;
+}
+.main .shortData article section div h1{
+    font-size: 40px;
+}
+.main .shortData .aboutPage{
+    background: linear-gradient(to top, rgba(6,10,16,.86) 4%, rgba(6,10,16,.36) 50%, rgba(6,10,16,.12) 85%), radial-gradient(circle at 80% 16%, rgba(240,181,58,.15), transparent 20%), radial-gradient(circle at 18% 88%, rgba(229,76,68,.16), transparent 18%), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1800&q=80') center/cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.main .shortData .aboutPage p:first-child{
+    padding: 10px;
+    width: 355px;
+    background-color: rgba(247, 248, 248, 0.341);
+    font-size: 13.5px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+    backdrop-filter: blur(2);
+    /* font-weight: bold; */
+}
+.main .shortData .aboutPage p{
+    color: white;
+    font-family: sans-serif;
+}
+.main .shortData ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.main .shortData article a{
+    padding: 11.5px 15px;
+    border-radius: 15px;
+    font-size: 13px;
+
+    background: linearasd-gradient(135deg,#ff6a00,#ff1f1f);
+    color: white;
+}
+@media (max-width: 1384) {
+    .main .shortData{
+        align-items: center;
+        flex-direction: column;
+    }
+}
