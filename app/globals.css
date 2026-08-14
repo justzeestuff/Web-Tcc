@@ -6,6 +6,7 @@
 }
 :root{
     --gradientBg: radial-gradient(circle at 10% 0%, rgba(43,124,255,.16), transparent 25%), radial-gradient(circle at 100% 0%, rgba(229,76,68,.10), transparent 20%), radial-gradient(circle at 90% 25%, rgba(240,181,58,.08), transparent 18%), linear-gradient(180deg, #050b13 0%, #07111d 38%, #091424 100%);
+    --sectionBg: --gradientBg: radial-gradient(circle at 10% 0%, #2b7cff29, transparent 25%), radial-gradient(circle at 100% 0%, #e54c441a, transparent 20%), radial-gradient(circle at 90% 25%, #f0b53a14, transparent 18%), linear-gradient(180deg, #050b13 0%, #07111d 38%, #091424 100%);
 }
 body{
     background: var(--gradientBg);

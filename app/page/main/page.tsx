@@ -1,13 +1,19 @@
-import React from 'react'
+// 'use client'
 import Link from 'next/link'
 
 import style from './style.module.css'
 
-const page = () => {
+// cmponents
+import Team from './client/team'
+import Points from './client/points'
+import Description from './client/description'
+import ShortData from './client/shortData'
+
+const Page = () => {
   return (
     <main className={style.main} >
       <div className={style.shortData} >
-        <article className={style.aboutPage} >  
+        <article className={style.aboutPage} >
           <section>
             <p>ახალგაზრდული საფეხბურთო ტურნირი • თბილისი</p>
             <div>
@@ -31,15 +37,32 @@ const page = () => {
           </nav>
         </article>
         <article className={style.data}>
-          <div>
-            <p>გამორჩეული მატჩი</p>
-            <p>2009 წლიანები</p>
+          <div className={style.bestMatch} >
+            <section>
+              <p>გამორჩეული მატჩი</p>
+              <p>2009 წლიანები</p>
+            </section>
+            <div>
+              <Team style={style.team} />
+              <Points style={style.teamPoints} />
+              <Team style={style.team} />   
+            </div>
+            <Description style='' />
           </div>
-          
+          <div className={style.secondaryData} >
+            <div>
+              <ShortData/>
+              <ShortData/>
+            </div>
+            <div>
+              <ShortData/>
+              <ShortData/>
+            </div>
+          </div>
         </article>
       </div>
-    </main> 
+    </main>
   )
 }
 
-export default page
+export default Page

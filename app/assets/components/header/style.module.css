@@ -25,11 +25,21 @@
   font-size: 10px;
   bottom: 20px;
 }
-.header article img{
-  height: 50px;
+.header article div {
+  height: 60px;
   margin-top: 6px;
-  width: 50px;
+  width: 60px;
   border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.header article div img{
+  height: 70px;
+  width: 70px;
 }
 /* navigation */
 .header nav,

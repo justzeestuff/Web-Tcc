@@ -12,7 +12,10 @@ export default function Header() {
     <header className={style.header}>
       <div className={style.wrapper} >
         <article>
-          <Image src={icon} alt='Trophy Icon Tcc Tbilisi Challange Cup Football Soccer' />
+          <div>
+            <Image src={icon} alt='Trophy Icon Tcc Tbilisi Challange Cup Football Soccer' />
+          </div>
+          
           <section>
             <p>TCC</p>
             <p>ოფიციალური ტურნირის ვებგვერდი</p>
