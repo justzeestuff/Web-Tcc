@@ -1,0 +1,20 @@
+.section{
+    margin: 30px 0 90px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(17,31,50,.94), rgba(10,22,36,.94));
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.36);
+}
+.section p{
+    padding: 0 15px;
+}
+.section p:first-child{
+    padding-top: 15px;
+    font-weight: bold;
+}
+.section p:last-child{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 10px;
+}

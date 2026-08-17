@@ -31,9 +31,10 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Header/>
-        {children}
-
-        {/* <Cursor/> */}
+        <div className="pageContainer" >
+          {children}
+        </div>
+        <Cursor/>
       </body>
     </html>
   );

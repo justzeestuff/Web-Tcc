@@ -19,7 +19,7 @@ const Cursor = () => {
 
   return <div className={style.cursor} 
               ref={cursor}
-              style={ {transform: `translate(${pos.x}px, ${pos.y}px)` } } />
+              style={{left: `${pos.x}px`, top: `${pos.y}px`}} />
 }
 
 export default Cursor

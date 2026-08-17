@@ -2,7 +2,7 @@
     height: 20px;
     width: 20px;
     background-color: red;
-    position: absolute;
+    position: fixed;
 
     transition: linear 0.06s;
     border-radius: 100px;

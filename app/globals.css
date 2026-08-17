@@ -10,7 +10,11 @@
 }
 body{
     background: var(--gradientBg);
+    background-attachment: fixed;
     height: 100vh;
+}
+.pageContainer{
+    padding: 0 18vw;
 }
 
 @font-face {
