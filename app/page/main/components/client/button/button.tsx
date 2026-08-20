@@ -14,7 +14,7 @@ interface ComponentProperties{
 const Button = ({href = "", text = "", className, inlineCss}: ComponentProperties) => {
   return (
     <Link className={[style.button, className].join('')}
-          style={inlineCss}  
+          style={inlineCss}
           href={href}>
             {text}
           </Link>

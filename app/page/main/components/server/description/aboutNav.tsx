@@ -3,7 +3,7 @@ import style from '../description/style.module.css'
 
 const AboutNav = ({title="", text=""}) => {
   return (
-    <section className={style.section} >
+    <section className={style.aboutNavigation} >
       <p>{title}</p>
       <p>{text}</p>
     </section>

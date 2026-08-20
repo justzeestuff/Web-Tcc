@@ -1,11 +1,12 @@
 import style from './style.module.css'
 
 // --client
-import Team from './components/client/team'
+import Team from './components/client/team/team'
 import Points from './components/client/points'
 import Description from './components/client/description/description'
-import ShortData from './components/client/shortData'
+import ShortData from './components/client/shortData/shortData'
 import Button from './components/client/button/button'
+
 // --server
 import AboutNav from './components/server/description/aboutNav'
 
@@ -13,7 +14,7 @@ const Page = () => {
   return (
     <>
       <main className={style.main} >
-        <div className={style.shortData} >
+        <div className={style.pageIntro} >
           <article className={style.aboutPage} >
             <section>
               <p>ახალგაზრდული საფეხბურთო ტურნირი • თბილისი</p>
@@ -34,7 +35,7 @@ const Page = () => {
                           text={"ცხრილების ნახვა"} />
                 </li>
                 <li>
-                  <Button inlineCss={{backgroundColor: 'rgba(255, 255, 255, 0.151);'}} 
+                  <Button inlineCss={{backgroundColor: 'rgba(255, 255, 255, 0.151)'}} 
                           href={"page/main"} 
                           text={"მატჩების კალენდარი"} />
                 </li>
@@ -48,9 +49,9 @@ const Page = () => {
                 <p>2009 წლიანები</p>
               </section>
               <div> 
-                <Team style={style.team} />
+                <Team />
                 <Points style={style.teamPoints} />
-                <Team style={style.team} />
+                <Team/>
               </div>
               <Description style='' />
             </div>
@@ -76,9 +77,6 @@ const Page = () => {
           </div>
         </section>
       </main>
-      <footer className={style.footer} >
-
-      </footer>
     </>
 
   )

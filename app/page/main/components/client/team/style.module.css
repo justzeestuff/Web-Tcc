@@ -1,0 +1,23 @@
+.teamProfile{
+    padding: 20px 0;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+}
+.teamProfile p{
+    padding: 0 30px;
+}
+.teamProfile img{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 1000px;
+}
+.main .data .secondaryData div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}

@@ -21,11 +21,7 @@ export default function Header() {
             <p>ოფიციალური ტურნირის ვებგვერდი</p>
           </section>
         </article>
-        <nav>
-          <ul>
-            <Navigation/>
-          </ul>
-        </nav>
+        <Navigation/>
       </div>
     </header>
   );

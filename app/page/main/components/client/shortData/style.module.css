@@ -1,0 +1,12 @@
+.shortStatistics{
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 10px;
+
+    background: linear-gradient(180deg, rgba(17,31,50,.94));
+    padding: 20px;
+}
+.shortStatistics p:first-child{
+    font-size: 30px;
+    font-weight: bolder;
+}

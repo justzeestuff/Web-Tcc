@@ -1,53 +1,51 @@
-
-.main .shortData{
+.main{
+      padding: 0 3vw;
+      height: 100%;
+}
+.main .pageIntro{
     margin-top: 40px;
     display: flex;
-    justify-content: space-evenly;
-    gap: 25px;
+    gap: 10px;
     font-family: sans-serif;
     color: white;
     overflow: hidden;
 }
-.main .shortData article{
-    height: 100%;
-    border-radius: 20px;
+.main .pageIntro article:first-child{
+    padding: 50px;
+}
+.main .pageIntro article{
+    border-radius: 5px;
     overflow: hidden;
-     padding: 55px 0;   
 }
-.main .shortData article:first-child section,
-.main .shortData article:first-child nav{
-    padding: 0 55px;
-}
-.main .shortData article section div h1{
+.main .pageIntro article section div h1{
     font-size: 40px;
+}
+.main .pageIntro article nav ul{
+    margin-top: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 25px;
 }
 
 /* --------------- about Page */
-.main .shortData .aboutPage{
+.main .pageIntro .aboutPage{
     width: 100%;
     background: linear-gradient(to top, rgba(6,10,16,.86) 4%, rgba(6,10,16,.36) 50%, rgba(6,10,16,.12) 85%), radial-gradient(circle at 80% 16%, rgba(240,181,58,.15), transparent 20%), radial-gradient(circle at 18% 88%, rgba(229,76,68,.16), transparent 18%), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1800&q=80') center/cover;
     background-position: center;
-}
-.main .shortData .aboutPage p:first-child{
+}   
+.main .pageIntro .aboutPage p:first-child{
     padding: 10px;
-    width: 355px;
     background-color: rgba(247, 248, 248, 0.341);
     font-size: 13.5px;
-    border-radius: 100px;
+    border-radius: 10px;
     margin-bottom: 20px;
     font-weight: bold;
     backdrop-filter: blur(2);
 }
-.main .shortData .aboutPage p{
+.main .pageIntro .aboutPage p{
     color: white;
     font-family: sans-serif;
     opacity: 0.8;
-}
-.main .shortData ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 45px;
 }
 /* ----------------- data ------------- */
 .main .data{
@@ -72,51 +70,17 @@
     align-items: center;
 }
 .main .data .bestMatch div .teamPoints{
-    font-size: 30px;
+    display: flex;
+    font-size: 30px;    
     font-weight: bold;
 }
-.main .data .bestMatch div section{
-    padding: 20px 0;
-    border-radius: 15px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 150px;
-}
-.main .data .bestMatch div section p{
-    padding: 0 30px;
-}
-.main .data .bestMatch div section img{
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-radius: 1000px;
-}
-.main .data .secondaryData div{
-    margin-top: 10px;
+.main .data .secondaryData div {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-.main .data .secondaryData div section{
-    background: linear-gradient(180deg, rgba(17,31,50,.94));
-    padding: 20px;
-    border-radius: 5px;
-    width: 100%;
-}
-.main .data .secondaryData div:last-child section{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background: linear-gradient(180deg, rgba(17,31,50,.94), rgba(10,22,36,.94));
-    
-    overflow: hidden;
-}
-.main .data .secondaryData div section p:first-child{
-    font-size: 30px;
-    font-weight: bolder;
+    gap:10px;
 }
 
 /* ---------- footer  -----------------*/
+
 .main .outro{
     color: white;
     font-family: sans-serif;
@@ -124,15 +88,39 @@
     font-weight: lighter;
 }
 .main .outro div{
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
-
-
 
 @media (max-width: 1384) {
     .main .shortData{
         align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 450){
+    .main .data .bestMatch div{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .data .bestMatch div section{
+        width: 100%;
+    }
+    .main .data .bestMatch div section img{
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 903){
+    .main .pageIntro{
+        flex-wrap: wrap;
+    }
+    .main .pageIntro article:first-child{
+        padding: 50px 20px ;
+    }
+    .main .outro div{
         flex-direction: column;
     }
 }

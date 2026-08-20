@@ -1,7 +1,14 @@
 .header{
   background-color: rgba(6, 12, 20, 0.644);
-  height: 80px;
-  padding: 0 18vw;
+  height: 90px;
+  padding: 0 3vw;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 20;
 }
 .header .wrapper{
   height: 100%;
@@ -41,28 +48,8 @@
   height: 70px;
   width: 70px;
 }
-/* navigation */
-.header nav,
-.header nav ul,
-.header nav ul li{
-  height: 100%;
-}
-.header nav ul{
-  display: flex;
-  gap: 30px;
-}
-.header nav ul li{
-  display: flex;
-  align-items: center;
-}
-.header nav ul a{
-  display: block;
-  text-align: center;
-  /* background: var(--gradientBg); */
-  border-radius: 50px;
-  font-family: sans-serif;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  opacity: 0.9;
+@media (max-width: 969px){
+  .header article section p:last-child{
+    display: none;
+  }
 }
